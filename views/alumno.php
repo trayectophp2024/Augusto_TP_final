@@ -2,7 +2,7 @@
 
 <div class="d-flex justify-content-center mt-3">
     <div class="card" style="width: 18rem;">
-        <img src="img/auchoPHP4.jpg" class="card-img-top" alt="...">
+        <img src="img/yo.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title"><span class="fw-bold">Nombre:</span> Augusto</h5>
             <h5 class="card-title"><span class="fw-bold">Apellido:</span> Lorenzo</h5>
@@ -15,6 +15,6 @@
             <li class="list-group-item text-danger">Lionel Messi</li>
             <li class="list-group-item">Cristiano Ronaldo</li>
             <li class="list-group-item text-primary">Ronaldinho Gaucho</li>
-            <li class="list-group-item text-warning">Nicolas Sune</li>
+            <li class="list-group-item text-success">Nicolas Sune</li>
         </ul>
     </div>

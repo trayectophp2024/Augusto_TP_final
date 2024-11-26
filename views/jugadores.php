@@ -17,8 +17,8 @@ $jugadores = $miObjetoJugador->jugadores_completo();
                     <div class="card h-100 text-center">
                         <img src="img/<?= $jugador->getImagen() ?>" class="card-img-top rounded-circle mx-auto mt-3" alt="Jugador 1" style="width: 100px; height: 100px;">
                         <div class="card-body">
-                            <h6 class="card-title mb-1"><b>Nombres:</b><?= $jugador->getNombres() ?></h6>
-                            <p class="card-title mb-1"><b>Apellidos:</b><?= $jugador->getApellidos() ?></p>
+                            <h6 class="card-title mb-1"><b> Nombres : </b><?= $jugador->getNombres() ?></h6>
+                            <p class="card-title mb-1"><b> Apellidos : </b><?= $jugador->getApellidos() ?></p>
 
                         </div>
                         <div class="card-footer">

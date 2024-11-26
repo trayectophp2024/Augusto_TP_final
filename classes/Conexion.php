@@ -6,7 +6,7 @@ class Conexion {
 
     public const DB_SERVER = "localhost";
     public const DB_USER = "root";
-    public const DB_PASS = "root";
+    public const DB_PASS = "";
     public const DB_NAME = "futbol_php";
 
     

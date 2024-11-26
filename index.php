@@ -11,6 +11,9 @@ $secciones_validas = [
     "nosotros" => [
         "titulo" => "Nosotros"
     ],
+    "alumno" => [
+        "titulo" => "Desarrollador web"
+    ],
     "info" => [
         "titulo" => "lista de futbol"
     ],
@@ -25,6 +28,10 @@ $secciones_validas = [
     "equipos" => [
         "titulo" => "Equipos de futbol"
     ],
+    "equipo_particular" => [
+        "titulo" => "Equipos de futbol"
+    ],
+    
     "estadios" => [
         "titulo" => "Todos los Estadios"
     ],

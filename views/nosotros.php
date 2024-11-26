@@ -12,7 +12,7 @@
     </div>
 
     <div class="d-flex justify-content-center p-3">
-         <a class="fs-3 fw-bold btn btn-warning" href="index.php?sec=alumno">Perfil</a>
+         <a class="fs-3 fw-bold btn btn-danger" href="index.php?sec=alumno">Perfil</a>
     </div>
 
     </div>
