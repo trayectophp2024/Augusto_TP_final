@@ -29,6 +29,9 @@ $jugadores = (new Jugador())->jugadores_completo();
                         <th scope="col">Peso</th>
                         <th scope="col">Pie_habil</th>
                         <th scope="col">Goles</th>
+                        <th scope="col">Equipo</th>
+                        <th scope="col">Posicion</th>
+                        <th scope="col">Estado</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -50,6 +53,9 @@ $jugadores = (new Jugador())->jugadores_completo();
                         <td><?=  $j->getPeso() ?></td>
                         <td><?=  $j->getPie_habil() ?></td>
                         <td><?=  $j->getGoles() ?></td>
+                        <td><?=  $j->getEquipo() ?></td>
+                        <td><?=  $j->getPosicion() ?></td>
+                        <td><?=  $j->getEstado() ?></td>
                         <td>
                             <a class="btn btn-warning" href="index.php?sec=edit_jugadores&id=<?= $j->getId() ?>">Editar</a>
 

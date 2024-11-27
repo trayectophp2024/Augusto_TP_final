@@ -19,6 +19,123 @@
      protected $id_posicion ;
      protected $id_estado;
 
+
+
+     public function insert($nombres, $apellidos, $apodo, $edad, $fecha_nacimiento, $fallecimiento, $lugar_nacimiento, $nacionalidad, $altura, $peso, $pie_habil, $goles, $imagen, $id_equipo, $id_posicion, $id_estado) {
+
+          $conexion = (new Conexion())->getConexion();
+      
+          $query = "INSERT INTO jugadores VALUES (null,:nombres, :apellidos, :apodo, :edad, :fecha_nacimiento, :fallecimiento, :lugar_nacimiento, :nacionalidad, :altura, :peso, :pie_habil, :goles, :imagen, :id_equipo, :id_posicion, :id_estado)";
+      
+          $PDOStatament = $conexion->prepare($query);
+          $PDOStatament->execute([
+              'nombres' => $nombres,
+              'apellidos'=> $apellidos,
+              'apodo' =>  $apodo,
+              'edad' => $edad,
+              'fecha_nacimiento' => $fecha_nacimiento,
+              'fallecimiento' => $fallecimiento,
+              'lugar_nacimiento' => $lugar_nacimiento,
+              'nacionalidad' => $nacionalidad,
+              'altura' => $altura ,
+              'peso' => $peso,
+              'pie_habil' => $pie_habil,
+              'goles' => $goles,
+              'imagen' => $imagen,
+              'id_equipo' => $id_equipo,
+              'id_posicion' => $id_posicion,
+              'id_estado' => $id_estado
+          ]);
+      
+          
+      }
+
+      public function edit($nombres, $apellidos, $apodo, $edad, $fecha_nacimiento, $fallecimiento, $lugar_nacimiento, $nacionalidad, $altura, $peso, $pie_habil, $goles, $id_equipo, $id_posicion, $id_estado,$id) {
+
+          $conexion = (new Conexion())->getConexion();
+      
+          $query = "UPDATE jugadores  SET 
+             nombres = :nombres, 
+             apellidos = :apellidos,
+             apodo = :apodo, 
+             edad = :edad, 
+             fecha_nacimiento = :fecha_nacimiento, 
+             fallecimiento= :fallecimiento, 
+             lugar_nacimiento = :lugar_nacimiento, 
+             nacionalidad = :nacionalidad, 
+             altura = :altura, 
+             peso = :peso, 
+             pie_habil = :pie_habil,
+             goles =  :goles, 
+             id_equipo = :id_equipo, 
+             id_posicion = :id_posicion, 
+             id_estado = :id_estado
+             WHERE id = :id
+             
+             ";
+      
+          $PDOStatament = $conexion->prepare($query);
+          $PDOStatament->execute([
+              'id' => $id,
+              'nombres' => $nombres,
+              'apellidos'=> $apellidos,
+              'apodo' =>  $apodo,
+              'edad' => $edad,
+              'fecha_nacimiento' => $fecha_nacimiento,
+              'fallecimiento' => $fallecimiento,
+              'lugar_nacimiento' => $lugar_nacimiento,
+              'nacionalidad' => $nacionalidad,
+              'altura' => $altura ,
+              'peso' => $peso,
+              'pie_habil' => $pie_habil,
+              'goles' => $goles,
+              'id_equipo' => $id_equipo,
+              'id_posicion' => $id_posicion,
+              'id_estado' => $id_estado
+          ]);
+      
+          
+      }
+
+        /* Reemplazar Imagen */
+
+     public function reemplazar_imagen($imagen, $id){
+
+          $conexion = (new Conexion())-> getConexion();
+  
+          $query = "UPDATE jugadores SET imagen = :imagen WHERE id = :id";
+  
+          $PDOStatament = $conexion->prepare($query);
+          $PDOStatament->execute(
+              [
+                  'id' => $id,
+                  'imagen' => $imagen
+              ]
+          );
+  
+  
+  
+      }
+  
+  
+      
+      /* Eliminar comic */
+  
+      public function delete() {
+          $conexion = (new Conexion())-> getConexion();
+  
+          $query = "DELETE FROM jugadores WHERE id = ?";
+  
+          $PDOStatament = $conexion->prepare($query);
+  
+          $PDOStatament->execute([$this->id]);
+  
+       }
+  
+  
+      
+
+
      public function jugadores_completo(): array {
         $catalogo= [];
 
@@ -35,7 +152,6 @@
         return $catalogo;
 
 }
-
 
 
 public function jugador_x_id(int $idProducto)   {
@@ -72,6 +188,14 @@ public function jugador_x_id(int $idProducto)   {
      $nombre = $posicion->getLugar();
      return $nombre; 
  }
+
+ public function getEstado() {
+     $estado = (new Estado())->estado_x_id($this->id_estado);
+     $nombre = $estado->getSituacion();
+     return $nombre; 
+ }
+
+ 
 
 
 

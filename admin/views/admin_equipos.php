@@ -45,8 +45,8 @@ $equipos = (new Equipo())->equipos_completo();
                     
                 </tbody>
             </table>
-
-                    <a class="btn btn-primary mt-5" href="index.php?sec=add_equipos">Cargar Nuevo equipo</a>
+                
+                <a class="btn btn-primary mt-5" href="index.php?sec=add_equipos">Cargar Nuevo equipo</a>
 
         </div>
     </div>
