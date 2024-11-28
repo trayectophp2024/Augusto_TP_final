@@ -30,13 +30,25 @@ $secciones_validas = [
       "titulo" => "Administracion de Equipos"
      ],
      "add_equipo" => [
-      "titulo" => "Agregar Equipo"
+      "titulo" => "Agregar Equipos"
      ],
      "edit_equipo" => [
-      "titulo" => "Editar Equipo"
+      "titulo" => "Editar Equipos"
      ],
      "delete_equipo" => [
-      "titulo" => "Eliminar Equipo"
+      "titulo" => "Eliminar Equipos"
+     ],
+     "admin_estadios" => [
+      "titulo" => "Administracion de Estadios"
+     ],
+     "add_estadio" => [
+      "titulo" => "Agregar Estadios"
+     ],
+     "edit_estadio" => [
+      "titulo" => "Editar Estadios"
+     ],
+     "delete_estadio" => [
+      "titulo" => "Eliminar Estadios"
      ]
 
     
@@ -101,6 +113,10 @@ $secciones_validas = [
         </li>
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="index.php?sec=admin_equipos">Admin de Equipos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.php?sec=admin_estadios">Admin de Estadios</a>
+
         </li>
 
         <li class="nav-item">

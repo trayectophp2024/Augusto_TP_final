@@ -10,7 +10,7 @@ $equipos = (new Equipo())->equipos_completo();
 
 <div class="row my-5">
     <div class="col">
-        <h1 class="text-center mb-5">Administracion de $equipos</h1>
+        <h1 class="text-center mb-5">Administracion de equipos</h1>
         <div class="row mb-5 d-flex align-items-center">
             <table class="table">
                 <thead>
@@ -46,7 +46,7 @@ $equipos = (new Equipo())->equipos_completo();
                 </tbody>
             </table>
 
-                    <a class="btn btn-primary mt-5" href="index.php?sec=add_equipos">Cargar Nuevo equipo</a>
+                    <a class="btn btn-warning mt-5" href="index.php?sec=add_equipos">Cargar Nuevo equipo</a>
 
         </div>
     </div>

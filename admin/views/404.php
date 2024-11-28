@@ -1,3 +1,3 @@
-<h1 class="text-center m-5">404: Pagina no encontrada</h1>
-<img width="500px" class="d-block mx-auto mb-5" src="../img/404.jpg" alt="error404">
+<h1 class="text-center m-5">Administracion no encontrado</h1>
+<img width="600px" class="d-block mx-auto mb-5" src="../img/error_40.jpg" alt="error404">
 
