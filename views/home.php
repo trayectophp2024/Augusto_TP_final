@@ -29,7 +29,7 @@
 
 
         <div class="row d-flex justify-content-center align-items-center p-5 ">
-    <a href="index.php?sec=juegos&plat=play" class="col-4">
+    <a href="index.php?sec=jugadores" class="col-4">
         <div class="card" style="width: 18rem;">
             <img class="img-fluid" src="img/messi2.png" alt="jugador" style="height: 200px;">
             <div class="card-body">
@@ -38,7 +38,7 @@
         </div>
     </a>
 
-    <a href="index.php?sec=juegos&plat=pc" class="col-4">
+    <a href="index.php?sec=estadios" class="col-4">
         <div class="card" style="width: 18rem;">
             <img class="img-fluid" src="img/konami.jpg" alt="estadio" style="height: 200px;">
             <div class="card-body">
@@ -46,7 +46,7 @@
             </div>
         </div>
     </a>
-    <a href="index.php?sec=juegos&plat=nintendo" class="col-4">
+    <a href="index.php?sec=equipos" class="col-4">
         <div class="card" style="width: 18rem;">
             <img class="img-fluid" src="img/newpi.png" alt="equipo" style="height: 200px;">
             <div class="card-body">

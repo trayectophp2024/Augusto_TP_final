@@ -3,7 +3,7 @@
     class Estadio {
         protected $id;
         protected $nombre;
-        protected $cpacidad;
+        protected $capacidad;
         protected $pais;        
         protected $imagen;
 
@@ -13,7 +13,7 @@
 
             $conexion = (new Conexion())-> getConexion();
 
-            $query = "SELECT * FROM estadios";
+            $query = "SELECT * FROM estadio";
 
             $PDOStatament = $conexion->prepare($query);
             $PDOStatament->setFetchMode(PDO::FETCH_CLASS, self::class);
@@ -30,7 +30,7 @@
         
         $conexion = (new Conexion())-> getConexion();
    
-        $query = "SELECT * FROM estadios WHERE id = :idProducto";
+        $query = "SELECT * FROM estadio WHERE id = :idProducto";
    
         $PDOStatament = $conexion->prepare($query);
         $PDOStatament->setFetchMode(PDO::FETCH_CLASS, self::class);
@@ -69,9 +69,9 @@
         /**
          * Get the value of cpacidad
          */ 
-        public function getCpacidad()
+        public function getCapacidad()
         {
-                return $this->cpacidad;
+                return $this->capacidad;
         }
 
         /**

@@ -43,7 +43,7 @@ $estados = (new Estado())->estado_completo();
                 </div>
                 <div class="col-12 mb-3">
                     <label class="form-label" for="fallecimiento">Fallecimiento</label>
-                    <input type="date" class="form-control" name="fallecio" id="fallecio" required>
+                    <input type="text" class="form-control" name="fallecio" id="fallecio" required>
 
                 </div>
                 <div class="col-12 mb-3">
@@ -118,7 +118,7 @@ $estados = (new Estado())->estado_completo();
 
 
 
-                <button type="submit" class="btn btn-warning">Cargar Personaje</button>
+                <button type="submit" class="btn btn-warning">Cargar Jugador</button>
 
 
 

@@ -35,6 +35,9 @@ $secciones_validas = [
     "estadios" => [
         "titulo" => "Todos los Estadios"
     ],
+    "estadio_particular" => [
+        "titulo" => "Todos los Estadios"
+    ],
     "contacto" => [
         "titulo" => "Contacto"
     ]
@@ -122,7 +125,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
                         <a class="nav-link" href="index.php?sec=equipos">Equipos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?sec=contacto">Contacto</a>
+                        <a class="nav-link" href="index.php?sec=contacto">Suscribite</a>
                     </li>
                 </ul>
             </div>

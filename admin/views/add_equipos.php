@@ -35,7 +35,7 @@
                         
 
 
-                        <button type="submit" class="btn btn-warning">Cargar Personaje</button>
+                        <button type="submit" class="btn btn-warning">Cargar Equipo </button>
 
                         
 

@@ -60,7 +60,7 @@ $jugador = (new Jugador())->jugador_x_id($id);
                 </div>
                 <div class="col-12 mb-3">
                     <label class="form-label" for="fallecimiento">Fallecimiento</label>
-                    <input type="date" class="form-control" name="fallecio" id="fallecio" value="<?= $jugador->getFallecimiento() ?>" required>
+                    <input type="text" class="form-control" name="fallecio" id="fallecio" value="<?= $jugador->getFallecimiento() ?>" required>
                 </div>
                 <div class="col-12 mb-3">
                     <label class="form-label" for="lugar">Lugar_nacimiento</label>

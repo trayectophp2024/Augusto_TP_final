@@ -21,7 +21,7 @@ $equipos = $miObjetoEquipos->equipos_completo();
                             <h5 class="card-title"><?= $equipo->getClub() ?></h5>
                         </div>
                         <div class="card-footer">
-                         <a href="index.php?sec=equipo_particular&id= <?= $equipo->getId() ?>" class="btn btn-success">Ver más</a>
+                         <a href="index.php?sec=equipo_particular&id=<?= $equipo->getId() ?>" class="btn btn-success">Ver más</a>
                         </div>
                     </div>
                 </div>
