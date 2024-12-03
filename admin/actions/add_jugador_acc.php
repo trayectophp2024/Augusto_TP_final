@@ -37,6 +37,8 @@
            
         );
 
+        (new Alerta())->add_alerta("success" , "El jugador se cargo correctamente");
+
 
 
         

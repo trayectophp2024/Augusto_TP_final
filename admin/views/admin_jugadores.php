@@ -7,6 +7,11 @@ $jugadores = (new Jugador())->jugadores_completo();
 
 ?>
 
+<div>
+            <?= (new Alerta())->get_alertas() ?>
+         </div>
+
+
 
 <div class="row my-5">
     <div class="col">

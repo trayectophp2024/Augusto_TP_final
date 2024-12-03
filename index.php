@@ -95,7 +95,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
 <body>
 
     <!-- Navegacion -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark"  style="background-color: #000;">
         <div class="container-fluid">
 
 
@@ -110,10 +110,10 @@ if (!array_key_exists($seccion, $secciones_validas)) {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.php?sec=home">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.php?sec=home ">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?sec=nosotros">Nosotros</a>
+                        <a class="nav-link"  href="index.php?sec=nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php?sec=jugadores">Jugadores</a>
@@ -138,7 +138,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
         ?>
     </main>
 
-    <footer class="bg-secondary">
+    <footer class="bg-dark">
         <p class="text-light text-center p-4">Todos los derechos reservados - 2024 - CFP20</p>
     </footer>
 
