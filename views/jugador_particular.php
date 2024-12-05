@@ -47,7 +47,7 @@ $jugador = $miObjetoJugador->jugador_x_id($id);
             </div>
         </div>
 
-        <h2 class="text-center mb-4">Posición del Jugador</h2>
+        <h2 class="text-center mb-4 text-danger">Posición del Jugador</h2>
         <div class="field-card mx-auto">
             <!-- Marcador de posición -->
             <div class="position-marker"><?= $jugador->getPosicion()  ?></div>

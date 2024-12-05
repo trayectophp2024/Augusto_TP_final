@@ -23,7 +23,7 @@ $equipo = $miObjetoEquipo->equipo_x_id($id);
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title text-success"><?= $equipo->getClub() ?></h5>
-                        <p class="text-muted mb-2"><b>Fecha de fundacion: </b><?= $equipo->getFundacion() ?> años</p>
+                        <p class="text-muted mb-2"><b>Fecha de fundacion: </b><?= $equipo->getFundacion() ?></p>
                         <p class="card-text"><b>Estadio: </b><?= $equipo->getEstadio() ?></p>
                         
                         
