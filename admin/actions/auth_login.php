@@ -7,7 +7,7 @@ $posData = $_POST;
 
 $login = (new Autenticacion())->log_in($posData['username'], $posData['pass']);
 
-(new Alerta())->add_alerta("dark" , "Bienvenido Administrador {$postData['username']}");
+/* (new Alerta())->add_alerta("dark" , "Bienvenido Administrador {$postData['username']}"); */
 
 
 if($login){
